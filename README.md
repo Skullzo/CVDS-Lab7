@@ -38,8 +38,17 @@
   <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto6-2.png">
 
 7. Implemente las operaciones faltantes:
+
     1. nombresProductosPedido
     2. valorTotalPedido - El resultado final lo debe retornar la base de datos, no se deben hacer operaciones en memoria.
     3. registrarNuevoProducto - Use su código de estudiante para evitar colisiones.
 
 8. Verifique por medio de un cliente SQL, que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
+
+
+
+## Sección II. - Introducción a MyBatis
+
+1. Revise la documentación básica de MyBatis de forma que entienda para qué sirve y el uso básico que se le puede dar al framework.
+
+2. Seguir las instrucciones que se encuentran en el repositorio de forma que en la clase MyBatisExample.java se creen los mappers necesarios y sea posible realizar la ejecución de diferentes sentencias SQL en la base de datos de pruebas.
