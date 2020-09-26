@@ -43,7 +43,13 @@
     2. valorTotalPedido - El resultado final lo debe retornar la base de datos, no se deben hacer operaciones en memoria.
     3. registrarNuevoProducto - Use su código de estudiante para evitar colisiones.
 
+A continuación mostramos las consultas que realizamos en SQL y el registro del nuevo producto, en el mismo orden del enunciado las realizamos de la siguiente forma.
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto7.png">
+
 8. Verifique por medio de un cliente SQL, que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
+
+A continuación, realizamos la primera consulta en SQL y la siguiente edición del código en Eclipse para verificar que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
 
 
 
