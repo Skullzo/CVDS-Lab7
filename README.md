@@ -53,6 +53,10 @@ A continuación, realizamos la primera consulta en SQL y la siguiente edición d
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto8.1.png">
 
+Luego, realizamos el mismo procedimiento con la siguiente consulta pero de la siguiente forma.
+
+
+
 ## Sección II. - Introducción a MyBatis
 
 1. Revise la documentación básica de MyBatis de forma que entienda para qué sirve y el uso básico que se le puede dar al framework.
