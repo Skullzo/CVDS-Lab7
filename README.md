@@ -49,6 +49,8 @@ A continuación mostramos las consultas que realizamos en SQL y el registro del 
 
 8. Verifique por medio de un cliente SQL, que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
 
+A continuación, realizamos la primera consulta en SQL y la siguiente edición del código en Eclipse para verificar que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
+
 
 
 ## Sección II. - Introducción a MyBatis
