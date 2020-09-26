@@ -38,8 +38,8 @@
   <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto6-2.png">
 
 7. Implemente las operaciones faltantes:
-  1. nombresProductosPedido
-  2. valorTotalPedido - El resultado final lo debe retornar la base de datos, no se deben hacer operaciones en memoria.
-  3. registrarNuevoProducto - Use su código de estudiante para evitar colisiones.
+    1. nombresProductosPedido
+    2. valorTotalPedido - El resultado final lo debe retornar la base de datos, no se deben hacer operaciones en memoria.
+    3. registrarNuevoProducto - Use su código de estudiante para evitar colisiones.
 
 8. Verifique por medio de un cliente SQL, que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
