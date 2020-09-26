@@ -55,7 +55,11 @@ A continuación, realizamos la primera consulta en SQL y la siguiente edición d
 
 Luego, realizamos el mismo procedimiento con la siguiente consulta pero de la siguiente forma.
 
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto8.2.png">
 
+Después, realizamos el mismo procedimiento con la siguiente consulta. Vemos que los valores retornados en la consulta son los correspondientes.
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto8.3.png">
 
 ## Sección II. - Introducción a MyBatis
 
