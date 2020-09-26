@@ -49,9 +49,9 @@ A continuación mostramos las consultas que realizamos en SQL y el registro del 
 
 8. Verifique por medio de un cliente SQL, que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
 
-A continuación, realizamos la primera consulta en SQL y la siguiente edición del código en Eclipse para verificar que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
+A continuación, realizamos la primera consulta en SQL y la siguiente edición del código en Eclipse para verificar que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos. Vemos que al verificar en la parte derecha de la imagen, nos retorna los valores correspondientes. 
 
-
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto8.1.png">
 
 ## Sección II. - Introducción a MyBatis
 
