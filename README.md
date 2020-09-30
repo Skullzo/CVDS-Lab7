@@ -2,13 +2,13 @@
 ## Sección I. - Introducción a JDBC
 1. Clonar el proyecto MyBatis_Introduction_VideoRental de GitHub donde se realizará la implementación completa del laboratorio.
 
-  A continuación, clonamos el proyecto MyBatis_Introduction_VideoRental de GitHub de la siguiente forma.
+  **A continuación, clonamos el proyecto MyBatis_Introduction_VideoRental de GitHub de la siguiente forma.**
   
   <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto1.png">
 
 2. Descargue el archivo JDBCExample.java y agreguelo en el paquete "edu.eci.cvds.sampleprj.jdbc.example".
 
-  Ahora, descargamos el archivo JDBCExample.java y lo agregamos en el paquete "edu.eci.cvds.sampleprj.jdbc.example".
+  **Ahora, descargamos el archivo JDBCExample.java y lo agregamos en el paquete "edu.eci.cvds.sampleprj.jdbc.example".**
   
   <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto2.png">
 
@@ -29,11 +29,11 @@
   Contraseña: prueba2019
   ```
   
-  Para conectarnos a la base de datos, llenamos los campos de la siguiente forma.
+  **Para conectarnos a la base de datos, llenamos los campos de la siguiente forma.**
   
   <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto6-11.PNG">
   
-  Y en el código, realizamos las siguientes modificaciones a **String user** y **String pwd**.
+  **Y en el código, realizamos las siguientes modificaciones a **String user** y **String pwd**.**
   
   <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto6-2.png">
 
@@ -43,21 +43,21 @@
     2. valorTotalPedido - El resultado final lo debe retornar la base de datos, no se deben hacer operaciones en memoria.
     3. registrarNuevoProducto - Use su código de estudiante para evitar colisiones.
 
-A continuación mostramos las consultas que realizamos en SQL y el registro del nuevo producto, en el mismo orden del enunciado las realizamos de la siguiente forma.
+**A continuación mostramos las consultas que realizamos en SQL y el registro del nuevo producto, en el mismo orden del enunciado las realizamos de la siguiente forma.**
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto7.png">
 
 8. Verifique por medio de un cliente SQL, que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos.
 
-A continuación, realizamos la primera consulta en SQL y la siguiente edición del código en Eclipse para verificar que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos. Vemos que al verificar en la parte derecha de la imagen, nos retorna los valores correspondientes. 
+**A continuación, realizamos la primera consulta en SQL y la siguiente edición del código en Eclipse para verificar que la información retornada por el programa coincide con la que se encuentra almacenada en base de datos. Vemos que al verificar en la parte derecha de la imagen, nos retorna los valores correspondientes.**
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto8.1.png">
 
-Luego, realizamos el mismo procedimiento con la siguiente consulta pero de la siguiente forma.
+**Luego, realizamos el mismo procedimiento con la siguiente consulta pero de la siguiente forma.**
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto8.2.png">
 
-Después, realizamos el mismo procedimiento con la siguiente consulta. Vemos que los valores retornados en la consulta son los correspondientes.
+**Después, realizamos el mismo procedimiento con la siguiente consulta. Vemos que los valores retornados en la consulta son los correspondientes.**
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Punto8.3.png">
 
