@@ -67,7 +67,7 @@ Después, realizamos el mismo procedimiento con la siguiente consulta. Vemos que
 
 2. Seguir las instrucciones que se encuentran en el repositorio de forma que en la clase **MyBatisExample.java** se creen los mappers necesarios y sea posible realizar la ejecución de diferentes sentencias SQL en la base de datos de pruebas.
 
-## Parte I
+### Parte I
 
 1. Ubique los archivos de configuración para producción de MyBATIS (mybatis-config.xml). Éste está en la ruta donde normalmente se ubican los archivos de configuración de aplicaciones montadas en Maven (src/main/resources). Edítelos y agregue en éste, después de la sección &lt;settings&gt; los siguientes 'typeAliases':
 
@@ -198,7 +198,7 @@ Después, realizamos el mismo procedimiento con la siguiente consulta. Vemos que
 	```
 
 
-## Parte II
+### Parte II
 
 1. Configure en el XML correspondiente, la operación consultarCliente(int id) del 'mapper' ClienteMapper.
 
