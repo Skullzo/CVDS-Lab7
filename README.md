@@ -79,6 +79,9 @@
         <typeAlias type='edu.eci.cvds.samples.entities.TipoItem' alias='TipoItem'/>
     </typeAliases>	
     ```
+**A continuación, le agregamos a la sección &lt;settings&gt; los siguientes 'typeAliases' de la siguiente forma.**
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte1.1.PNG">
 
 2. Lo primero que va a hacer es configurar un 'mapper' que permita que el framework reconstruya todos los objetos Cliente con sus detalles (ItemsRentados). Para hacer más eficiente la reconstrucción, la misma se realizará a partir de una sola sentencia SQL que relaciona los Clientes, sus Items Rentados, Los Items asociados a la renta, y el tipo de item. Ejecute esta sentencia en un cliente SQL (en las estaciones Linux está instalado EMMA), y revise qué nombre se le está asignando a cada columna del resultado:
 
