@@ -161,6 +161,10 @@
 	Como observa, Para cada propiedad de la clase se agregará un elemento de tipo &lt;result&gt;, el cual, en la propiedad 'property' indicará el nombre de la propiedad, y en la columna 'column' indicará el nombre de la columna de su tabla correspondiente (en la que se hará persistente). En caso de que la columna sea una llave primaria, en lugar de 'result' se usará un elemento de tipo 'id'. Cuando la clase tiene una relación de composición con otra, se agrega un elemento de tipo &lt;association&gt;.Finalmente, observe que si la clase tiene un atributo de tipo colección (List, Set, etc), se agregará un elemento de tipo &lt;collection&gt;, indicando (en la propiedad 'ofType') de qué tipo son los elementos de la colección. En cuanto al indentificador del 'resultMap', como convención se suele utilizar el nombre del tipo de dato concatenado con 'Result' como sufijo.
 	
 	Teniendo en cuenta lo anterior, haga cuatro 'resultMap': uno para la clase Cliente, otro para la clase ItemRentado, otro para la clase Item, y otro para la clase TipoItem. 
+	
+**A continuación vamos a añadir al id=ClienteResult de tipo Cliente los valores documento, nombre, telefono, direccion, email, vetado y rentado en el resultMap de la siguiente forma.**
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte1.4.PNG">
 
 5. Una vez haya hecho lo anterior, es necesario que en el elemento &lt;collection&gt; del maestro se agregue una propiedad que indique cual es el 'resultMap' a través del cual se podrá 'mapear' los elementos contenidos en dicha colección. Para el ejemplo anterior, como la colección contiene elementos de tipo 'Detalle', se agregará el elemento __resultMap__ con el identificador del 'resultMap' de Detalle:
 
@@ -169,9 +173,12 @@
 	```
 
 	Teniendo en cuenta lo anterior, haga los ajustes correspondientes en la configuración para el caso del modelo de Alquiler de películas.
-
 	
-7. Si intenta utilizar el 'mapper' tal como está hasta ahora, se puede presentar un problema: qué pasa si las tablas a las que se les hace JOIN tienen nombres de columnas iguales?... Con esto MyBatis no tendría manera de saber a qué atributos corresponde cada una de las columnas. Para resolver esto, si usted hace un query que haga JOIN entre dos o más tablas, siempre ponga un 'alias' con un prefijo el query. Por ejemplo, si se tiene
+**Ahora vamos a añadir el collection con valor de property rentados, de tipo ItemRentado del resultMap ItemResult, como se ve a continuación.**
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte1.5.PNG">
+	
+6. Si intenta utilizar el 'mapper' tal como está hasta ahora, se puede presentar un problema: qué pasa si las tablas a las que se les hace JOIN tienen nombres de columnas iguales?... Con esto MyBatis no tendría manera de saber a qué atributos corresponde cada una de las columnas. Para resolver esto, si usted hace un query que haga JOIN entre dos o más tablas, siempre ponga un 'alias' con un prefijo el query. Por ejemplo, si se tiene
 
 	```sql	
 	select ma.propiedad1, det.propiedad1 ....
@@ -196,8 +203,11 @@
 	```
 	Haga los ajustes necesarios en la consulta y en los 'resultMap' para que no haya inconsistencias de nombres.
 
+**Los ajustes que realizamos para que no hayan inconsistencias de nombres, fue realizar otra SENTENCIA SQL añadiendo la última lidea de código que dice ```WHERE c.documento = #{idcli}```, para evitar inconsistencias de nombres.**
 
-8. Use el programa de prueba suministrado (MyBatisExample) para probar cómo a través del 'mapper' generado por MyBatis, se puede consultar un Cliente. 
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte1.6.PNG">
+
+7. Use el programa de prueba suministrado (MyBatisExample) para probar cómo a través del 'mapper' generado por MyBatis, se puede consultar un Cliente. 
 
 	```java	
 	...
