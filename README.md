@@ -242,7 +242,7 @@
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.1.1.PNG">
 
-**Luego, abrimos el ```ClienteMapper.xml```, agregamos la propiedad ```parameterType="map"```, y haciendo la referencia dentro de la sentencia SQL respectivamente, quedando de la siguiente forma.
+**Luego, abrimos el ```ClienteMapper.xml```, agregamos la propiedad ```parameterType="map"```, y haciendo la referencia dentro de la sentencia SQL respectivamente, quedando de la siguiente forma.**
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.1.2.PNG">
 
@@ -257,7 +257,7 @@
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.4.1.PNG">
 
-**Seguido de esto, realizamos las siguientes modificaciones al ```ItemMapper.xml``` para configurar apropiadamente la operación insertarItem.
+**Seguido de esto, realizamos las siguientes modificaciones al ```ItemMapper.xml``` para configurar apropiadamente la operación insertarItem.**
 
 <img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.4.2.PNG">
 
