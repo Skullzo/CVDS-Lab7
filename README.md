@@ -218,6 +218,9 @@
 	...
 	```
 
+**Para realizar el siguiente procedimiento, nos dirigimos al ```main``` de la clase ```MyBatisExample``` para poder consultar un CLiente, modificando el código, quedando de la siguiente forma.**
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte1.7.PNG">
 
 ### Parte II
 
@@ -234,6 +237,14 @@
 
 	* Al XML (\<select>, \<insert>, etc) asociado al método del mapper, agregue la propiedad _parameterType="map"_ .
 	* Una vez hecho esto, podrá hacer referencia dentro de la sentencia SQL a este parámetro a través de: #{idcli}
+	
+**Para realizar este procedimiento, primero nos dirigimos a la clase ```ClienteMapper``` y realizamos las siguientes modificaciones.**
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.1.1.PNG">
+
+**Luego, abrimos el ```ClienteMapper.xml```, agregamos la propiedad ```parameterType="map"```, y haciendo la referencia dentro de la sentencia SQL respectivamente, quedando de la siguiente forma.
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.1.2.PNG">
 
 2. Verifique el funcionamiento haciendo una consulta a través del 'mapper' desde MyBatisExample.
 
@@ -242,7 +253,15 @@
 4. Configure en el XML correspondiente (en este caso ItemMapper.xml) la operación 'insertarItem(Item it). Para este tenga en cuenta:
 	* Al igual que en en los dos casos anteriores, el query estará basado en los parámetros ingresados (en este caso, un objeto Item). En este caso, al hacer uso de la anotación @Param, la consulta SQL se podrá componer con los atributos de dicho objeto. Por ejemplo, si al paramétro se le da como nombre ("item"): __insertarItem(@Param("item")Item it)__, en el query se podría usar #{item.id}, #{item.nombre}, #{item.descripcion}, etc. Verifique el funcionamiento haciendo una consulta a través del 'mapper' desde MyBatisExample.
 	
-5. 	Configure en el XML correspondiente (de nuevo en ItemMapper.xml) las operaciones 'consultarItem(int it) y 'consultarItems()' de ItemMapper. En este caso, tenga adicionalmente en cuenta:
+**Primero realizamos la siguiente modificación a la clase ItemMapper del código, quedando de la siguiente forma.**
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.4.1.PNG">
+
+**Seguido de esto, realizamos las siguientes modificaciones al ```ItemMapper.xml``` para configurar apropiadamente la operación insertarItem.
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.4.2.PNG">
+
+5. Configure en el XML correspondiente (de nuevo en ItemMapper.xml) las operaciones 'consultarItem(int it) y 'consultarItems()' de ItemMapper. En este caso, tenga adicionalmente en cuenta:
 	* Para poder configurar dichas operaciones, se necesita el 'resultMap' definido en ClientMapper. Para evitar tener CODIGO REPETIDO, mueva el resultMap _ItemResult_ de ClienteMapper.xml a ItemMapper.xml. Luego, como dentro de ClienteMapper el resultMap _ItemRentadoResult_ requiere del resultMap antes movido, haga referencia al mismo usando como referencia absoluta en 'namespace' de ItemMapper.xml:
 
 	```xml	
