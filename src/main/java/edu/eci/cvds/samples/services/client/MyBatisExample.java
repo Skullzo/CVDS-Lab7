@@ -20,7 +20,11 @@ package edu.eci.cvds.samples.services.client;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.sql.Date;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -67,9 +71,12 @@ public class MyBatisExample {
         
         //Crear el mapper y usarlo: 
         ClienteMapper cm=sqlss.getMapper(ClienteMapper.class);
-        //Consultar Clientes
+        //Consultar Clientes:
         System.out.println(cm.consultarClientes());
-        
+        //Consulta del cliente de documento 6:
+        System.out.println(cm.consultarCliente(6));
+        // Se agrega el itemRentado 15 "Pollo" al cliente #6 Elkin con las fechas respectivas. 
+        cm.agregarItemRentadoACliente(6, 3, dateFormat("12/03/2020"), dateFormat("12/05/2020"));
         
         sqlss.commit();
         
@@ -78,6 +85,15 @@ public class MyBatisExample {
 
         
         
+    }
+    public static Date dateFormat(String date) {
+        Date format;
+        try {
+            format = (Date) new SimpleDateFormat("dd/MM/yyyy").parse(date);
+        } catch (ParseException e) {
+            format = null;
+        }
+        return format;
     }
 
 
