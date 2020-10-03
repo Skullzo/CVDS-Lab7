@@ -271,3 +271,11 @@
 	```
 	
 	Verifique el funcionamiento haciendo una consulta a través del 'mapper' desde MyBatisExample.
+
+**Para realizar este procedimiento, primero configuramos el XML ```ItemMapper.xml``` de la siguiente forma, con el siguiente resultMap para evitar tener código repetido, quedando de la siguiente forma.**
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.5.1.PNG">
+
+**Luego, para verificar el funcionamiento haciendo una consulta a través del 'mapper' desde MyBatisExample, añadimos las siguientes líneas de código al ```main``` de la clase ```MyBatisExample``` para verificar que funciona correctamente.**
+
+<img  src="https://github.com/JuanMunozD/CVDS7/blob/master/Im%C3%A1genes/Parte2.5.2.PNG">
